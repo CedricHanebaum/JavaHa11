@@ -1,4 +1,4 @@
-package kockKurve;
+package kochKurve;
 
 public class TestClass {
 

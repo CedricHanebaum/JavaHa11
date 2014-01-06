@@ -1,4 +1,4 @@
-package kockKurve;
+package kochKurve;
 
 import laHa04.VektorRn;
 
