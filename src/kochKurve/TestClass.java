@@ -9,9 +9,9 @@ public class TestClass {
 		KochFigur flocke2 = new KochFigur();
 		KochFigur flocke3 = new KochFigur();
 		
-		flocke1.kochKurve(50, 150, 550, 180, 1);
-		flocke2.kochKurve(50, 300, 550, 330, 4);
-		flocke3.kochKurve(50, 500, 550, 530, 7);
+		flocke1.kochKurve(50, 150, 550, 150, 1);
+		flocke2.kochKurve(50, 300, 550, 300, 4);
+		flocke3.kochKurve(50, 500, 550, 500, 7);
 		
 		g.add(flocke1);
 		g.add(flocke2);
