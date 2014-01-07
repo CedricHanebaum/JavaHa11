@@ -25,9 +25,6 @@ public class KochKurve {
 			zp2x = zp1x + Math.cos(KochKurve.getRad(rotation + 60)) * laenge / 3;
 			zp2y = zp1y - Math.sin(KochKurve.getRad(rotation + 60)) * laenge / 3;
 			
-			System.out.println(">>" + Math.cos(KochKurve.getRad(rotation)) * laenge / 3);
-			System.out.println(">>" + Math.sin(KochKurve.getRad(rotation)) * laenge / 3);
-			
 			zp3x = ax + 2 * ((bx - ax) / 3);
 			zp3y = ay + 2 * ((by - ay) / 3);
 			
@@ -40,7 +37,7 @@ public class KochKurve {
 	}
 	
 	public static void kochKurve(double ax, double ay, double bx, double by, double rek) {
-		privateKochKurve(ax, ay, bx, by, rek, 0); //TODO anfangsrotatio berechnen
+		privateKochKurve(ax, ay, bx, by, rek, (int) Math.asin((by - ay) / (bx - ax))); //TODO bogenmaß und so, aufpassen!
 		System.out.println("(" + bx + "/" + by + ")");
 	}
 	
