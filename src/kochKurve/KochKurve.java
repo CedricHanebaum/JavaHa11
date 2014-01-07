@@ -19,15 +19,7 @@ public class KochKurve {
 			zp1x = ax + (bx - ax) / 3;
 			zp1y = ay + (by - ay) / 3;
 			
-			hoehe = Math.sqrt(Math.pow(laenge / 3, 2) + Math.pow(laenge / 6, 2));
-			System.out.println(">>" + hoehe);
-			vektorHoehe = orth.mult(hoehe);
-			zp2 = new VektorRn(ax + (bx - ax) / 2, ay + (by - ay) / 2);
-			System.out.println(">>" + zp2);
-			zp2 = zp2.add(vektorHoehe);
-			zp2x = zp2.getElements()[0];
-			zp2y = zp2.getElements()[1];
-			System.out.println(">>" + zp2y);
+			//TODO zp2
 			
 			zp3x = ax + 2 * ((bx - ax) / 3);
 			zp3y = ay + 2 * ((by - ay) / 3);
